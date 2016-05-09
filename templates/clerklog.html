@@ -1,0 +1,13 @@
+{% load staticfiles %}
+{% include 'base.html' %}
+{% load crispy_forms_tags %}
+
+<div>
+    <form action="" method="POST">
+        <table>
+            {{ form | crispy }}
+        </table>
+        {% csrf_token %}
+    </form>
+</div>
+
