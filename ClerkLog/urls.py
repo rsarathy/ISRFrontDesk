@@ -23,4 +23,6 @@ urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='index.html')),
     url(r'^log/$', 'ClerkLog.views.make_log'),
     url(r'^login/$', 'Authentication.views.login'),
+    url(r'^contact/$', TemplateView.as_view(template_name='contact.html')),
+    # TODO: Contact views --> submit request / complaint
 ]
