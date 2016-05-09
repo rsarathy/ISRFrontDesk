@@ -1,0 +1,16 @@
+{% include "base.html" %}
+{% load crispy_forms_tags %}
+<title>ISR Front Desk | Log In</title>
+<body>
+	<div class="row">
+		<div class="col-sm-6 col-md-3">
+			<form action="" method="POST">
+				<table>
+					{{ form | crispy }}
+				</table>
+				{% csrf_token %}
+				<input class="btn btn-default btn-sm" type="submit" value="Login">
+			</form>
+		</div>
+	</div>
+</body>

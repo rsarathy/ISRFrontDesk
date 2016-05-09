@@ -6,10 +6,19 @@
 <body>
     <h1>Welcome to the ISR Front Desk!</h1>
    <div>
-       <p><a href="/login">Login</a></p>
        <p><a href="/TBD">Game List</a></p>
        <p><a href="/TBD">Movie List</a></p>
        <p><a href="http://housing.illinois.edu/maintenance">Submit a TMA</a></p>
+
+       {% if username %}
+       <p align="right">Welcome, {{ username }}<br>
+           <a href="/plans">My Saved Plans</a><br>
+           <a>Logout</a></p>
+       {% else %}
+            <p align="right"><a href="/login">Log In</a></p>
+       {% endif %}
+
+
    </div>
 
 </body>
